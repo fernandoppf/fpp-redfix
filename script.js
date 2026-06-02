@@ -16,7 +16,7 @@ if (navToggle && navLinks) {
   });
 }
 
-// Preguntas frecuentes: acordeón accesible con un solo panel abierto a la vez.
+// FAQ: acordeón accesible con una respuesta abierta a la vez.
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
@@ -45,8 +45,8 @@ faqItems.forEach((item) => {
   });
 });
 
-// Animación sutil: muestra contenido al entrar en pantalla sin depender de librerías.
-const revealItems = document.querySelectorAll(".service-card, .gallery-card, .benefits-list article, .social-grid a");
+// Animación al hacer scroll: muestra bloques con movimiento sutil.
+const revealItems = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
@@ -58,11 +58,10 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
   );
 
-  revealItems.forEach((item) => {
-    item.classList.add("reveal");
-    observer.observe(item);
-  });
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
 }
