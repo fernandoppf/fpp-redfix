@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FPP RedFix ofrece soporte técnico, reparación, mantención y optimización de computadores, notebooks y PC gamer.">
-  <title>FPP RedFix | Soporte técnico y reparación de computadores</title>
+  <meta name="description" content="FPP RedFix ofrece soporte TI, reparación, mantención, optimización y mejoras de hardware para computadores, notebooks, PC gamer, redes y pymes en Peñaflor, Talagante, Padre Hurtado, Maipú y alrededores.">
+  <meta name="keywords" content="soporte técnico, reparación computadores, mantención notebook, PC gamer, upgrade SSD, soporte TI, Peñaflor, Talagante, Padre Hurtado, Maipú">
+  <meta name="author" content="FPP RedFix">
+  <meta name="theme-color" content="#071526">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FPP RedFix | Soporte TI y reparación de computadores">
+  <meta property="og:description" content="Conectamos soluciones, reparamos confianza. Soporte TI, reparación de computadores y soluciones tecnológicas para hogares y pymes.">
+  <meta property="og:image" content="assets/img/pc-gamer.jpg">
+  <meta property="og:locale" content="es_CL">
+  <title>FPP RedFix | Soporte TI y reparación de computadores</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/img/pc-gamer.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Encabezado fijo con navegación principal -->
+  <!-- Header principal con navegación responsive -->
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Navegación principal">
       <a class="brand" href="#inicio" aria-label="Ir al inicio de FPP RedFix">
         <span class="brand-mark">FR</span>
         <span>
           <strong>FPP RedFix</strong>
-          <small>Soporte técnico</small>
+          <small>Soporte TI y hardware</small>
         </span>
       </a>
 
@@ -31,7 +41,8 @@
       <div class="nav-links" data-nav-links>
         <a href="#servicios">Servicios</a>
         <a href="#galeria">Trabajos</a>
-        <a href="#beneficios">Por qué elegirnos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
         <a href="#faq">FAQ</a>
         <a class="nav-cta" href="https://wa.me/56944175116?text=Hola%20FPP%20RedFix%2C%20quiero%20cotizar%20un%20servicio%20t%C3%A9cnico" target="_blank" rel="noopener">WhatsApp</a>
       </div>
@@ -39,217 +50,247 @@
   </header>
 
   <main>
-    <!-- Sección de inicio con propuesta de valor y llamada a WhatsApp -->
+    <!-- Hero con propuesta de valor y contacto directo -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Disponible para diagnósticos y cotizaciones</p>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Soporte técnico disponible</p>
           <h1 id="hero-title">FPP RedFix</h1>
           <p class="tagline">Conectamos soluciones, reparamos confianza</p>
+          <p class="hero-subtitle">Soporte TI, reparación de computadores y soluciones tecnológicas para hogares y pymes.</p>
           <p class="hero-description">
-            Servicio técnico para computadores, notebooks y equipos gamer.
-            En FPP RedFix realizamos mantención, reparación, optimización y mejoras de hardware
-            para que tu equipo funcione rápido, limpio y confiable. Diagnóstico claro, atención
-            responsable y soluciones pensadas según tu necesidad.
+            Mantención, reparación, optimización y mejoras de hardware para que tu equipo funcione rápido,
+            limpio y confiable, con diagnóstico transparente y atención personalizada.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/56944175116?text=Hola%20FPP%20RedFix%2C%20quiero%20solicitar%20un%20diagn%C3%B3stico%20para%20mi%20computador" target="_blank" rel="noopener">Solicitar diagnóstico por WhatsApp</a>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="btn btn-primary" href="https://wa.me/56944175116?text=Hola%20FPP%20RedFix%2C%20quiero%20cotizar%20un%20servicio%20t%C3%A9cnico" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
             <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
           </div>
         </div>
 
-        <div class="hero-panel" aria-label="Resumen de servicios">
-          <span class="panel-label">Respuesta técnica</span>
-          <strong>Diagnóstico claro antes de reparar</strong>
-          <p>Revisión, recomendación y pasos de solución sin vueltas.</p>
-          <div class="panel-grid">
-            <span>PC</span>
-            <span>Notebook</span>
-            <span>Gamer</span>
-          </div>
-        </div>
+        <aside class="hero-panel reveal" aria-label="Datos rápidos de atención">
+          <span class="panel-label">Atención FPP RedFix</span>
+          <strong>Diagnóstico transparente y atención personalizada.</strong>
+          <ul class="panel-list">
+            <li><span>WhatsApp</span><a href="https://wa.me/56944175116" target="_blank" rel="noopener">+56 9 44175116</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/fp_redfix/" target="_blank" rel="noopener">@fp_redfix</a></li>
+            <li><span>Zona</span><em>Peñaflor, Talagante, Padre Hurtado, Maipú y alrededores</em></li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <!-- Franja de confianza con indicadores rápidos -->
-    <section class="trust-strip" aria-label="Indicadores de atención">
+    <!-- Indicadores de confianza y zona de atención -->
+    <section class="trust-strip" aria-label="Confianza y cobertura">
       <div class="container trust-grid">
-        <div>
-          <strong>Soporte técnico</strong>
-          <span>Reparación, instalación y optimización</span>
+        <div class="trust-card reveal">
+          <strong>+10 años de experiencia</strong>
+          <span>Soporte TI, hardware, redes y equipos de alto rendimiento.</span>
         </div>
-        <div>
-          <strong>Equipos limpios</strong>
-          <span>Mantención interna y externa</span>
+        <div class="trust-card reveal">
+          <strong>Atención en tu zona</strong>
+          <span>Peñaflor, Talagante, Padre Hurtado, Maipú y alrededores.</span>
         </div>
-        <div>
-          <strong>Upgrade inteligente</strong>
-          <span>RAM, SSD, M.2 y rendimiento</span>
+        <div class="trust-card reveal">
+          <strong>Remoto y presencial</strong>
+          <span>Soluciones según urgencia, equipo y necesidad del cliente.</span>
         </div>
       </div>
     </section>
 
-    <!-- Sección de servicios principales -->
+    <!-- Servicios principales con precios referenciales -->
     <section class="section services" id="servicios" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Servicios</p>
-          <h2 id="services-title">Soluciones para que tu equipo vuelva a rendir</h2>
-          <p>Desde una mantención preventiva hasta el armado de un PC gamer listo para jugar, trabajar o estudiar.</p>
+          <h2 id="services-title">Soluciones técnicas para rendimiento, estabilidad y seguridad</h2>
+          <p>Servicios pensados para computadores de hogar, notebooks de trabajo, estaciones de pyme y PC gamer.</p>
         </div>
 
         <div class="services-grid">
-          <article class="service-card">
-            <span class="service-icon">01</span>
+          <article class="service-card reveal">
+            <span class="service-icon">PC</span>
             <h3>Mantención full de PC y notebook</h3>
-            <p>Limpieza, revisión térmica, estado general y recomendaciones para alargar la vida útil del equipo.</p>
+            <p>Limpieza interna, revisión térmica, ventilación, estado general y recomendaciones preventivas.</p>
+            <strong class="price">Desde $25.000</strong>
           </article>
-          <article class="service-card">
-            <span class="service-icon">02</span>
+          <article class="service-card reveal">
+            <span class="service-icon">OS</span>
             <h3>Formateo e instalación de Windows</h3>
-            <p>Instalación limpia, drivers esenciales, configuración inicial y equipo listo para usar.</p>
+            <p>Instalación limpia, drivers esenciales, configuración inicial, seguridad básica y optimización.</p>
+            <strong class="price">Desde $20.000</strong>
           </article>
-          <article class="service-card">
-            <span class="service-icon">03</span>
+          <article class="service-card reveal">
+            <span class="service-icon">CPU</span>
             <h3>Cambio de pasta térmica</h3>
-            <p>Mejora de temperaturas en CPU y GPU para reducir ruido, bajones de rendimiento y apagones.</p>
+            <p>Mejora de temperaturas en CPU/GPU para reducir ruido, apagones y pérdida de rendimiento.</p>
+            <strong class="price">Desde $15.000</strong>
           </article>
-          <article class="service-card">
-            <span class="service-icon">04</span>
+          <article class="service-card reveal">
+            <span class="service-icon">SSD</span>
             <h3>Upgrade de RAM, SSD y M.2</h3>
-            <p>Asesoría, instalación y migración para que tu computador arranque y responda más rápido.</p>
+            <p>Asesoría, instalación y migración para aumentar velocidad de arranque y respuesta general.</p>
+            <strong class="price">Desde $15.000 + repuesto</strong>
           </article>
-          <article class="service-card">
-            <span class="service-icon">05</span>
+          <article class="service-card reveal">
+            <span class="service-icon">FAN</span>
             <h3>Limpieza interna y externa</h3>
             <p>Retiro de polvo, cuidado de ventiladores, gabinete, teclado y superficies con método seguro.</p>
+            <strong class="price">Desde $18.000</strong>
           </article>
-          <article class="service-card">
-            <span class="service-icon">06</span>
+          <article class="service-card reveal">
+            <span class="service-icon">GPU</span>
             <h3>Armado de PC gamer</h3>
-            <p>Montaje ordenado, gestión de cables, flujo de aire y pruebas para rendimiento estable.</p>
+            <p>Montaje ordenado, gestión de cables, flujo de aire, configuración inicial y pruebas de estabilidad.</p>
+            <strong class="price">Cotización según equipo</strong>
           </article>
-          <article class="service-card service-card-wide">
-            <span class="service-icon">07</span>
+          <article class="service-card service-card-wide reveal">
+            <span class="service-icon">SEC</span>
             <h3>Eliminación de virus y optimización</h3>
             <p>Limpieza de amenazas, revisión de inicio, configuración del sistema y mejoras para uso diario.</p>
+            <strong class="price">Desde $20.000</strong>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Galería de trabajos con fotos editables desde assets/img -->
+    <!-- Galería de trabajos realizados -->
     <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Trabajos realizados</p>
-          <h2 id="gallery-title">Galería FPP RedFix</h2>
-          <p>Fotos preparadas para mostrar mantenciones, upgrades, software y limpieza técnica.</p>
+          <h2 id="gallery-title">Hardware, mantención y mejoras con terminación profesional</h2>
+          <p>Imágenes de referencia para mostrar el tipo de trabajo técnico que realiza FPP RedFix.</p>
         </div>
 
         <div class="gallery-grid">
-          <figure class="gallery-card">
-            <img src="assets/img/mantencion-notebook.jpg" alt="Mantención interna de notebook en mesa técnica">
+          <figure class="gallery-card reveal">
+            <img src="assets/img/mantencion-notebook.jpg" alt="Mantención interna de notebook en mesa técnica" width="1448" height="1086" loading="lazy" decoding="async">
             <figcaption>Mantención de notebook</figcaption>
           </figure>
-          <figure class="gallery-card">
-            <img src="assets/img/pc-gamer.jpg" alt="Armado y mantención de PC gamer en mesa técnica">
+          <figure class="gallery-card reveal">
+            <img src="assets/img/pc-gamer.jpg" alt="Armado profesional de PC gamer sin personas visibles" width="1448" height="1086" loading="lazy" decoding="async">
             <figcaption>Armado de PC gamer</figcaption>
           </figure>
-          <figure class="gallery-card">
-            <img src="assets/img/cambio-ssd.jpg" alt="Upgrade de memoria RAM y SSD M.2 en PC de escritorio">
+          <figure class="gallery-card reveal">
+            <img src="assets/img/cambio-ssd.jpg" alt="Upgrade de memoria RAM y SSD M.2 en PC de escritorio" width="1448" height="1086" loading="lazy" decoding="async">
             <figcaption>Cambio de SSD y M.2</figcaption>
           </figure>
-          <figure class="gallery-card">
-            <img src="assets/img/limpieza-interna.jpg" alt="Cambio de pasta térmica y limpieza interna de computador">
+          <figure class="gallery-card reveal">
+            <img src="assets/img/limpieza-interna.jpg" alt="Cambio de pasta térmica y limpieza interna de computador" width="1448" height="1086" loading="lazy" decoding="async">
             <figcaption>Limpieza interna</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- Razones para escoger el servicio -->
+    <!-- Experiencia y capacidades técnicas -->
+    <section class="section experience" id="experiencia" aria-labelledby="experience-title">
+      <div class="container experience-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experiencia y confianza</p>
+          <h2 id="experience-title">Soporte TI con criterio técnico y trato cercano</h2>
+          <p>Más de 10 años resolviendo problemas de hardware, software, redes y continuidad operativa.</p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="metric-card reveal">
+            <strong>10+</strong>
+            <span>Años de experiencia en soporte TI</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>HW</strong>
+            <span>Hardware, notebooks, PCs gamer y servidores</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>NET</strong>
+            <span>Redes, conectividad y diagnóstico de entorno</span>
+          </article>
+          <article class="metric-card reveal">
+            <strong>ON</strong>
+            <span>Atención remota y presencial según el caso</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios del servicio -->
     <section class="section benefits" id="beneficios" aria-labelledby="benefits-title">
       <div class="container benefits-layout">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Por qué elegir FPP RedFix</p>
-          <h2 id="benefits-title">Soporte cercano, técnico y transparente</h2>
-          <p>Sabemos que tu computador puede ser trabajo, estudio, juego o todo a la vez. Por eso cuidamos cada detalle.</p>
+          <h2 id="benefits-title">Una reparación bien explicada genera más confianza</h2>
+          <p>El objetivo no es solo reparar, sino que entiendas qué ocurrió y cómo evitar que vuelva a pasar.</p>
         </div>
 
         <div class="benefits-list">
-          <article>
+          <article class="reveal">
             <span></span>
             <div>
               <h3>Diagnóstico explicado en simple</h3>
-              <p>Te contamos qué ocurre, qué se recomienda y qué conviene evitar antes de avanzar.</p>
+              <p>Te contamos qué falla, qué conviene hacer y qué opciones tienes antes de avanzar.</p>
             </div>
           </article>
-          <article>
+          <article class="reveal">
             <span></span>
             <div>
-              <h3>Enfoque en rendimiento real</h3>
-              <p>Priorizamos estabilidad, temperaturas y velocidad para que notes el cambio en el uso diario.</p>
+              <h3>Rendimiento real</h3>
+              <p>Priorizamos temperaturas, estabilidad, velocidad y seguridad para que notes el cambio.</p>
             </div>
           </article>
-          <article>
+          <article class="reveal">
             <span></span>
             <div>
-              <h3>Cuidado profesional del equipo</h3>
-              <p>Uso de herramientas adecuadas, orden y pruebas para entregar un trabajo limpio y confiable.</p>
+              <h3>Trabajo ordenado y verificable</h3>
+              <p>Uso de herramientas adecuadas, pruebas posteriores y recomendaciones de cuidado.</p>
             </div>
           </article>
-          <article>
+          <article class="reveal">
             <span></span>
             <div>
-              <h3>Comunicación directa</h3>
-              <p>Atención por redes, WhatsApp y correo para resolver dudas y coordinar el servicio.</p>
+              <h3>Atención responsable</h3>
+              <p>Comunicación directa por WhatsApp, correo y redes para coordinar cada servicio.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Redes sociales y canales de contacto -->
-    <section class="section contact" id="redes" aria-labelledby="contact-title">
+    <!-- Contacto y redes sociales -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
       <div class="container contact-layout">
-        <div>
+        <div class="contact-copy reveal">
           <p class="eyebrow">Contacto</p>
-          <h2 id="contact-title">Hablemos de tu equipo</h2>
-          <p>Escríbenos por el canal que prefieras y cuéntanos qué problema presenta tu computador.</p>
+          <h2 id="contact-title">Cuéntanos qué necesita tu equipo</h2>
+          <p>Atención en Peñaflor, Talagante, Padre Hurtado, Maipú y alrededores.</p>
+          <div class="contact-details">
+            <a href="https://wa.me/56944175116" target="_blank" rel="noopener"><span>WA</span> +56 9 44175116</a>
+            <a href="https://www.instagram.com/fp_redfix/" target="_blank" rel="noopener"><span>IG</span> @fp_redfix</a>
+            <p><span>ZN</span> Peñaflor, Talagante, Padre Hurtado, Maipú y alrededores</p>
+          </div>
         </div>
 
-        <div class="social-grid" aria-label="Redes sociales de FPP RedFix">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de FPP RedFix">
-            <span>IG</span> Instagram
-          </a>
-          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok de FPP RedFix">
-            <span>TT</span> TikTok
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook de FPP RedFix">
-            <span>FB</span> Facebook
-          </a>
-          <a href="https://wa.me/56944175116?text=Hola%20FPP%20RedFix%2C%20quiero%20consultar%20por%20un%20servicio" target="_blank" rel="noopener" aria-label="WhatsApp de FPP RedFix">
-            <span>WA</span> WhatsApp
-          </a>
-          <a href="mailto:contacto@fppredfix.cl" aria-label="Correo de FPP RedFix">
-            <span>@</span> contacto@fppredfix.cl
-          </a>
+        <div class="social-grid reveal" aria-label="Redes sociales de FPP RedFix">
+          <a href="https://www.instagram.com/fp_redfix/" target="_blank" rel="noopener" aria-label="Instagram de FPP RedFix con trabajos realizados"><span>IG</span> Instagram: trabajos realizados</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok de FPP RedFix"><span>TT</span> TikTok</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook de FPP RedFix"><span>FB</span> Facebook</a>
+          <a href="https://wa.me/56944175116?text=Hola%20FPP%20RedFix%2C%20quiero%20consultar%20por%20un%20servicio" target="_blank" rel="noopener" aria-label="WhatsApp de FPP RedFix"><span>WA</span> WhatsApp</a>
         </div>
       </div>
     </section>
 
-    <!-- Preguntas frecuentes con acordeón controlado por JavaScript -->
+    <!-- Preguntas frecuentes con acordeón -->
     <section class="section faq" id="faq" aria-labelledby="faq-title">
       <div class="container faq-layout">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="eyebrow">Preguntas frecuentes</p>
           <h2 id="faq-title">Antes de solicitar soporte</h2>
+          <p>Respuestas rápidas para coordinar mejor tu diagnóstico o reparación.</p>
         </div>
 
         <div class="faq-list">
-          <article class="faq-item">
+          <article class="faq-item reveal">
             <button type="button" aria-expanded="false">
               ¿Hacen diagnóstico antes de reparar?
               <span>+</span>
@@ -258,7 +299,7 @@
               <p>Sí. Primero se revisa el equipo y se explica el problema, las opciones de solución y el costo estimado.</p>
             </div>
           </article>
-          <article class="faq-item">
+          <article class="faq-item reveal">
             <button type="button" aria-expanded="false">
               ¿Puedo cotizar por WhatsApp?
               <span>+</span>
@@ -267,7 +308,7 @@
               <p>Sí. Puedes enviar modelo del equipo, síntomas, fotos o videos para orientar mejor la cotización inicial.</p>
             </div>
           </article>
-          <article class="faq-item">
+          <article class="faq-item reveal">
             <button type="button" aria-expanded="false">
               ¿Instalan SSD, M.2 o más RAM?
               <span>+</span>
@@ -276,7 +317,16 @@
               <p>Sí. También podemos ayudarte a elegir componentes compatibles según tu equipo y el uso que necesitas.</p>
             </div>
           </article>
-          <article class="faq-item">
+          <article class="faq-item reveal">
+            <button type="button" aria-expanded="false">
+              ¿Atienden de forma remota y presencial?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí. La modalidad depende del tipo de problema, urgencia y ubicación dentro de la zona de atención.</p>
+            </div>
+          </article>
+          <article class="faq-item reveal">
             <button type="button" aria-expanded="false">
               ¿Entregan el equipo optimizado?
               <span>+</span>
@@ -290,7 +340,7 @@
     </section>
   </main>
 
-  <!-- Footer con datos de contacto y enlaces rápidos -->
+  <!-- Footer con datos de contacto, redes y horarios -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
@@ -301,16 +351,25 @@
             <small>Conectamos soluciones, reparamos confianza</small>
           </span>
         </a>
+        <p>Servicio técnico moderno para hogares y pymes.</p>
       </div>
       <div>
         <h2>Contacto</h2>
-        <p>Correo: contacto@fppredfix.cl</p>
+        <a href="https://wa.me/56944175116" target="_blank" rel="noopener">WhatsApp: +56 9 44175116</a>
+        <a href="https://www.instagram.com/fp_redfix/" target="_blank" rel="noopener">Instagram: @fp_redfix</a>
+        <p>Peñaflor, Talagante, Padre Hurtado, Maipú y alrededores.</p>
       </div>
       <div>
-        <h2>Enlaces</h2>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#faq">Preguntas frecuentes</a>
+        <h2>Redes sociales</h2>
+        <a href="https://www.instagram.com/fp_redfix/" target="_blank" rel="noopener">Instagram: videos e imágenes de trabajos</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div>
+        <h2>Horarios</h2>
+        <p>Lunes a viernes: 09:00 a 19:00</p>
+        <p>Sábados: 10:00 a 15:00</p>
+        <p>Domingos y festivos: previa coordinación</p>
       </div>
     </div>
     <p class="copyright">© 2026 FPP RedFix. Todos los derechos reservados.</p>
